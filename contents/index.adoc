@@ -100,6 +100,11 @@ include::{samplescodedir}/applying-plugins/imperative.gradle[]
 include::{samplescodedir}/applying-plugins/imperative.gradle.kts[]
 ----
 
+The Kotlin DSL provides also a `apply<Plugin>()` overload which can be used to apply a plugin.
+The benefit is that it is type-safe and the IDE can help you with autocompletion.
+But for that you have know the exact path of the `Plugin` implementation which is
+most of the time not shared by plugin authors.
+
 [NOTE]
 --
 **We strongly recommend that you use the `plugins {}` block in preference to the `apply()` function.**
