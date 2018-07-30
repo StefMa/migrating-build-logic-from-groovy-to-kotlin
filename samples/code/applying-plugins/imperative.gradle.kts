@@ -8,5 +8,5 @@ buildscript {
 }
 
 apply(plugin = "java")
-apply(plugin = "jacoco")
 apply(plugin = "org.springframework.boot")
+apply<org.gradle.testing.jacoco.plugins.JacocoPlugin>()

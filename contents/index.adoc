@@ -100,7 +100,8 @@ include::{samplescodedir}/applying-plugins/imperative.gradle[]
 include::{samplescodedir}/applying-plugins/imperative.gradle.kts[]
 ----
 
-The Kotlin DSL provides also a `apply<Plugin>()` overload which can be used to apply a plugin.
+As you see with the link:{user-manual}standard_plugins.html[JaCoCo plugin] there is also a `apply<Plugin>()`
+overload which can be used.
 The benefit is that it is type-safe and the IDE can help you with autocompletion.
 But for that you have know the exact path of the `Plugin` implementation which is
 most of the time not shared by plugin authors.
